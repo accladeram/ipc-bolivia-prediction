@@ -1,10 +1,12 @@
-## 📂 README.md — Predicción del IPC en Bolivia usando Aprendizaje Automático y Modelos Econométricos
+# Predicción del IPC en Bolivia usando Modelos Econométricos y de Machine Learning
 
 ### 📌 Descripción
 
 Este proyecto corresponde a mi monografía final del diplomado en *Machine Learning aplicado a Econometría*, cuyo objetivo fue desarrollar un sistema de predicción del Índice de Precios al Consumidor (IPC) en Bolivia utilizando modelos tradicionales y de aprendizaje automático.
 
 El enfoque se centra en comparar la precisión y estabilidad de diferentes enfoques univariados y multivariados, con especial énfasis en la implementación de métodos como Prophet, SVR, Random Forest y ARIMA, aplicados en esquemas de predicción multi-horizonte.
+
+(El objetivo de esta investigación es comparar la precisión de distintos modelos para predecir el Índice de Precios al Consumidor (IPC) en Bolivia, utilizando tanto técnicas econométricas tradicionales (ARIMA/SARIMA) como modelos de Machine Learning (Random Forest, Prophet).)
 
 ---
 
@@ -84,6 +86,44 @@ Los resultados se interpretan comparando el desempeño relativo entre modelos pa
 
 ---
 
+### 📁 Estructura del repositorio (mejorado)
+
+```bash
+ipc-prediction-bolivia/
+│
+├── 📂 data/
+│   ├── 📂 raw/              # Datos originales sin procesar
+│   ├── 📂 processed/        # Datos transformados y listos para análisis
+│   └── 📂 external/         # Fuentes externas relevantes (opcional)
+│
+├── 📂 notebooks/
+│   ├── 01_exploracion.ipynb      # Análisis exploratorio
+│   ├── 02_modelos_ARIMA.ipynb    # Modelos econométricos
+│   ├── 03_modelos_ML.ipynb       # Modelos ML: RF, Prophet, etc.
+│   └── 04_evaluacion_modelos.ipynb # Comparación y métricas
+│
+├── 📂 src/
+│   ├── utils.py                  # Funciones auxiliares
+│   ├── preprocessing.py         # Transformación de datos
+│   └── 📂 models/                  # Scripts de entrenamiento y evaluación
+│       ├── arima.py
+│       ├── prophet_model.py
+│       └── random_forest.py
+│
+├── 📂 outputs/
+│   ├── 📂 figures/                  # Gráficos y visualizaciones finales
+│   └── 📂 results/                  # Predicciones y métricas
+│
+├── 📂 report/
+│   └── monografia.pdf            # Tu documento final en PDF
+│
+├── 📄README.md
+├── 📄requirements.txt             # Librerías necesarias
+└── 📄LICENSE                      # CC BY 4.0 o la que elijas
+```
+
+---
+
 ### 🚀 Cómo ejecutar
 
 1. Clona este repositorio:
@@ -110,6 +150,12 @@ pip install pandas numpy matplotlib seaborn prophet scikit-learn statsmodels ope
 * Prophet mostró gran robustez para horizontes cortos en un contexto altamente estacional.
 * El uso de rezagos y variables macroeconómicas mejora significativamente la precisión predictiva.
 * Las pruebas estadísticas refuerzan la validez de los modelos seleccionados frente a benchmarks naïve.
+
+---
+
+## 📜 Licencia
+
+Este trabajo está bajo la Licencia Creative Commons Attribution 4.0 International (CC BY 4.0). Puedes compartir, adaptar y usar este trabajo con atribución.
 
 ---
 
