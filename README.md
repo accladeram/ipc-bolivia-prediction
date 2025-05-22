@@ -162,6 +162,7 @@ Este trabajo está bajo la Licencia Creative Commons Attribution 4.0 Internation
 ### 👩‍💻 Autor
 
 **Ana Carolina Cladera Melgar**
+
 Diplomado en Machine Learning aplicado a Econometría
 
 📫 \accladeram@gmail.com
