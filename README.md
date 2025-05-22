@@ -117,8 +117,12 @@ pip install pandas numpy matplotlib seaborn prophet scikit-learn statsmodels ope
 
 **Ana Carolina Cladera Melgar**
 Diplomado en Machine Learning aplicado a Econometría
+
 📫 \accladeram@gmail.com
-🔗 \[LinkedIn] – \[Portafolio completo]
+
+🔗 \[LinkedIn] 
+ 
+🔗 \[Portafolio completo]
 
 ---
 
